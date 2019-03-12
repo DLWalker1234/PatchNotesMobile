@@ -19,7 +19,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)IDBInterface.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ISQLiteService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\UserModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GameModel.cs" />
   </ItemGroup>

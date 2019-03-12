@@ -4,8 +4,8 @@ using PatchNotes;
 using SQLite;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(PatchNotes.iOS.SQLiteService))]
-namespace PatchNotes.iOS
+[assembly: Dependency(typeof(PatchNotes.Droid.SQLiteService))]
+namespace PatchNotes.Droid
 {
     public class SQLiteService : ISQLiteService
     {
@@ -17,8 +17,7 @@ namespace PatchNotes.iOS
             }
             var sqliteFilename = $"{databaseName}.db3";
             var documentsPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            var libraryPath = Path.Combine(documentsPath, "..", "Library");
-            var path = Path.Combine(libraryPath, sqliteFilename);
+            var path = Path.Combine(documentsPath, sqliteFilename);
             return path;
         }
 
