@@ -3,7 +3,7 @@ using SQLite;
 
 namespace PatchNotes
 {
-    public interface ISQLiteService
+    public interface IDBInterface
     {
         SQLiteConnection GetConnection(string PatchNotesDatabase);
         long GetSize(string PatchNotesDatabase);
