@@ -19,11 +19,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)ISQLiteService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\UserModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\GameModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\SteamService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ISQLiteService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\SteamCreds.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Data\ISteamService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Data\" />
   </ItemGroup>
 </Project>
