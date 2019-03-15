@@ -5,10 +5,8 @@ namespace PatchNotes
 {
     public interface ISteamService
     {
-        Task<List<TodoItem>> RefreshDataAsync();
+        Task<List<Game>> GetStringAsync();
 
-        Task SaveTodoItemAsync(TodoItem item, bool isNewItem);
-
-        Task DeleteTodoItemAsync(string id);
+        Task<Player> GetPlayer();
     }
 }
