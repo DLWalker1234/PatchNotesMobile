@@ -24,6 +24,17 @@ namespace PatchNotes
             return Games;
         }
 
+        public async Task<Player>GetPlayer()
+        {
+            var httpClient = new HttpClient();
+
+            var json = await httpClient.GetStringAsync(Url);
+
+            var Player = JsonConvert.DeserializeObject<Player>(json);
+
+            return Player;
+        }
+
 
     }
 }
